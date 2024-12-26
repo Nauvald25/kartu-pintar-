@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Crismon+Text, sans-serif';
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgb(0,  0, 0.2);
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-header {
+    padding: 20px;
+}
+
+.card-header .pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 4px solid white; /* ubah warna lingkaran */
+}
+
+.card-header .name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-header .desc{
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.card-header .sm a {
+    color: #777;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.card-header .sm a:hover {
+    color: #4caf50;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #008000;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #4caf50;
+}
+
+.card-footer {
+    background: white;
+    padding: 15px;
+    border-top: 1px solid white;
+}
+
+.card-footer .number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.card-footer .number .item {
+    font-size: 14px;
+    color: #555;
+
+}
+
+.card-footer .number .item span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-footer .number .border {
+    height: 30px;
+    width: 1px;
+    background: white;
+}
+
+@media (max-width: 400px) {
+    .profile-card{
+        width: 90%;
+    }
+
+    .card-footer .number {
+        flex-direction: column;
+    }
+
+    .card-footer .number .border {
+        display: none;
+    }
+}
+
+
+
